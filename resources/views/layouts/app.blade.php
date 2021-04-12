@@ -36,7 +36,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel Blog') }}
+                        <img src="https://ecole-lechiffre.fr/wp-content/uploads/2019/05/Fichier-8-1024x489.png" alt='lechifre ' height="55" width="150">
                     </a>
                 </div>
 
