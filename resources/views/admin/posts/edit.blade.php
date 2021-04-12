@@ -10,7 +10,7 @@
                         <h2>
                             Edit Post
 
-                            <a href="{{ url('admin/posts') }}" class="btn btn-default pull-right">Go Back</a>
+                            <a href="{{ url('admin/posts') }}" class="btn btn-default pull-right">Retour</a>
                         </h2>
                     </div>
 
@@ -22,7 +22,7 @@
                             <div class="form-group">
                                 <div class="col-md-8 col-md-offset-2">
                                     <button type="submit" class="btn btn-primary">
-                                        Update
+                                        Mettre à jour
                                     </button>
                                 </div>
                             </div>

@@ -10,7 +10,7 @@
                         <h2>
                             {{ $post->title }} <small>by {{ $post->user->name }}</small>
 
-                            <a href="{{ url('admin/posts') }}" class="btn btn-default pull-right">Go Back</a>
+                            <a href="{{ url('admin/posts') }}" class="btn btn-default pull-right">Retour</a>
                         </h2>
                     </div>
 

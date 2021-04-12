@@ -8,9 +8,9 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h2>
-                            Create Post
+                            Créer un Post
 
-                            <a href="{{ url('admin/posts') }}" class="btn btn-default pull-right">Go Back</a>
+                            <a href="{{ url('admin/posts') }}" class="btn btn-default pull-right">Retour</a>
                         </h2>
                     </div>
 
@@ -22,7 +22,7 @@
                             <div class="form-group">
                                 <div class="col-md-8 col-md-offset-2">
                                     <button type="submit" class="btn btn-primary">
-                                        Create
+                                        Créer
                                     </button>
                                 </div>
                             </div>

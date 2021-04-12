@@ -8,7 +8,7 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h2>
-                            Users
+                            Utilisateurs
                         </h2>
                     </div>
 
@@ -16,7 +16,7 @@
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th>Name</th>
+                                    <th>Prénom</th>
                                     <th>Email</th>
                                     <th>Admin?</th>
                                     <th>No of Posts</th>
@@ -31,12 +31,12 @@
                                         <td>{{ ($user->is_admin)?'Yes':'No' }}</td>
                                         <td>{{ $user->posts_count }}</td>
                                         <td>
-                                            <a href="{{ url("/admin/users/{$user->id}") }}" data-method="DELETE" data-token="{{ csrf_token() }}" data-confirm="Are you sure?" class="btn btn-xs btn-danger">Delete</a>
+                                            <a href="{{ url("/admin/users/{$user->id}") }}" data-method="DELETE" data-token="{{ csrf_token() }}" data-confirm="Etes vous sur?" class="btn btn-xs btn-danger">Supprimer</a>
                                         </td>
                                     </tr>
                                 @empty
                                     <tr>
-                                        <td colspan="2">No user available.</td>
+                                        <td colspan="2">Aucun utilisateur disponible.</td>
                                     </tr>
                                 @endforelse
                             </tbody>

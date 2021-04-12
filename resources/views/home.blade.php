@@ -16,7 +16,7 @@
 
             <div class="col-md-3">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Comments</div>
+                    <div class="panel-heading">Commentaires</div>
 
                     <div class="panel-body">
                         <h1>{{ $comments }}</h1>

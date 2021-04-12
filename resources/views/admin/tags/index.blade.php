@@ -10,7 +10,7 @@
                         <h2>
                             Tags
 
-                            <a href="{{ url('admin/tags/create') }}" class="btn btn-default pull-right">Create New</a>
+                            <a href="{{ url('admin/tags/create') }}" class="btn btn-default pull-right">Créer un nouveau tag</a>
                         </h2>
                     </div>
 
@@ -18,7 +18,7 @@
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th>Name</th>
+                                    <th>Nom</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -27,13 +27,13 @@
                                     <tr>
                                         <td>{{ $tag->name }}</td>
                                         <td>
-                                            <a href="{{ url("/admin/tags/{$tag->id}/edit") }}" class="btn btn-xs btn-info">Edit</a>
-                                            <a href="{{ url("/admin/tags/{$tag->id}") }}" data-method="DELETE" data-token="{{ csrf_token() }}" data-confirm="Are you sure?" class="btn btn-xs btn-danger">Delete</a>
+                                            <a href="{{ url("/admin/tags/{$tag->id}/edit") }}" class="btn btn-xs btn-info">Modifier</a>
+                                            <a href="{{ url("/admin/tags/{$tag->id}") }}" data-method="DELETE" data-token="{{ csrf_token() }}" data-confirm="Etes vous sur?" class="btn btn-xs btn-danger">Supprimer </a>
                                         </td>
                                     </tr>
                                 @empty
                                     <tr>
-                                        <td colspan="2">No tag available.</td>
+                                        <td colspan="2">Aucun tag disponible.</td>
                                     </tr>
                                 @endforelse
                             </tbody>

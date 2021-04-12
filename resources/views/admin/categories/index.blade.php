@@ -18,8 +18,8 @@
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th>Name</th>
-                                    <th>Post Count</th>
+                                    <th>Nom</th>
+                                    <th>Nn post</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -29,13 +29,13 @@
                                         <td>{{ $category->name }}</td>
                                         <td>{{ $category->posts_count }}</td>
                                         <td>
-                                            <a href="{{ url("/admin/categories/{$category->id}/edit") }}" class="btn btn-xs btn-info">Edit</a>
-                                            <a href="{{ url("/admin/categories/{$category->id}") }}" data-method="DELETE" data-token="{{ csrf_token() }}" data-confirm="Are you sure?" class="btn btn-xs btn-danger">Delete</a>
+                                            <a href="{{ url("/admin/categories/{$category->id}/edit") }}" class="btn btn-xs btn-info">Modifier</a>
+                                            <a href="{{ url("/admin/categories/{$category->id}") }}" data-method="DELETE" data-token="{{ csrf_token() }}" data-confirm="Etes vous sur?" class="btn btn-xs btn-danger">Supprimer</a>
                                         </td>
                                     </tr>
                                 @empty
                                     <tr>
-                                        <td colspan="2">No category available.</td>
+                                        <td colspan="2">Aucun catégories disponible.</td>
                                     </tr>
                                 @endforelse
                             </tbody>

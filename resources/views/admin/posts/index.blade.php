@@ -10,7 +10,7 @@
                         <h2>
                             Posts
 
-                            <a href="{{ url('admin/posts/create') }}" class="btn btn-default pull-right">Create New</a>
+                            <a href="{{ url('admin/posts/create') }}" class="btn btn-default pull-right">Créer un nouveau posts</a>
                         </h2>
                     </div>
 
@@ -18,12 +18,12 @@
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th>Title</th>
-                                    <th>Body</th>
-                                    <th>Author</th>
-                                    <th>Category</th>
+                                    <th>Titre</th>
+                                    <th>Corps</th>
+                                    <th>Auteur</th>
+                                    <th>Categories</th>
                                     <th>Tags</th>
-                                    <th>Published</th>
+                                    <th>Publié ?</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -42,19 +42,19 @@
                                                     if($post->published == 'Yes') {
                                                         $label = 'Draft';
                                                     } else {
-                                                        $label = 'Publish';
+                                                        $label = 'Publier';
                                                     }
                                                 @endphp
-                                                <a href="{{ url("/admin/posts/{$post->id}/publish") }}" data-method="PUT" data-token="{{ csrf_token() }}" data-confirm="Are you sure?" class="btn btn-xs btn-warning">{{ $label }}</a>
+                                                <a href="{{ url("/admin/posts/{$post->id}/publish") }}" data-method="PUT" data-token="{{ csrf_token() }}" data-confirm="Etes-vous sur ?" class="btn btn-xs btn-warning">{{ $label }}</a>
                                             @endif
-                                            <a href="{{ url("/admin/posts/{$post->id}") }}" class="btn btn-xs btn-success">Show</a>
-                                            <a href="{{ url("/admin/posts/{$post->id}/edit") }}" class="btn btn-xs btn-info">Edit</a>
-                                            <a href="{{ url("/admin/posts/{$post->id}") }}" data-method="DELETE" data-token="{{ csrf_token() }}" data-confirm="Are you sure?" class="btn btn-xs btn-danger">Delete</a>
+                                            <a href="{{ url("/admin/posts/{$post->id}") }}" class="btn btn-xs btn-success">Voir</a>
+                                            <a href="{{ url("/admin/posts/{$post->id}/edit") }}" class="btn btn-xs btn-info">Modifier</a>
+                                            <a href="{{ url("/admin/posts/{$post->id}") }}" data-method="DELETE" data-token="{{ csrf_token() }}" data-confirm="Etes-vous sur?" class="btn btn-xs btn-danger">Supprimer</a>
                                         </td>
                                     </tr>
                                 @empty
                                     <tr>
-                                        <td colspan="5">No post available.</td>
+                                        <td colspan="5">Aucun posts créer</td>
                                     </tr>
                                 @endforelse
                             </tbody>
